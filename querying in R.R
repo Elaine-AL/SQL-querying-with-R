@@ -27,7 +27,7 @@ male_employees = sqldf("SELECT *
                        ")
 
 # to get the total amount spent by employer with id = 1, in this case Matt. G
-sum_of_id1 = sqldf("SELECT item_cost, SUM(item_cost) 
+sum_of_id1 = sqldf("SELECT id, SUM(item_cost) 
                     FROM orders 
                     WHERE id = 1
                    ")
